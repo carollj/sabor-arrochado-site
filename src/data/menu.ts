@@ -1,0 +1,291 @@
+import { MenuItem } from '@types/index';
+
+export const MENU_DATA: MenuItem[] = [
+  // PORÇÕES
+  {
+    id: 'caldinho-camarao',
+    name: 'Caldinho de Camarão',
+    price: 19.90,
+    category: 'porcoes',
+    description: 'Sopa cremosa com camarão fresco',
+  },
+  {
+    id: 'caldinho-peixe',
+    name: 'Caldinho de Peixe',
+    price: 19.90,
+    category: 'porcoes',
+    description: 'Sopa tradicional com peixe',
+  },
+  {
+    id: 'caldinho-marisco',
+    name: 'Caldinho de Marisco',
+    price: 19.90,
+    category: 'porcoes',
+    description: 'Sopa com seleção de mariscos',
+  },
+  {
+    id: 'batata-frita',
+    name: 'Batata Frita ou Macaxeira',
+    price: 25.90,
+    category: 'porcoes',
+    description: 'Porção crocante e saborosa',
+  },
+  {
+    id: 'isca-carne-sol',
+    name: 'Isca de Carne de Sol ou Salada',
+    price: 45.90,
+    category: 'porcoes',
+    description: 'Carne de sol macia com acompanhamento',
+  },
+  {
+    id: 'fritas-calabresa',
+    name: 'Fritas com Calabresa',
+    price: 32.90,
+    category: 'porcoes',
+    description: 'Batata frita com calabresa crocante',
+  },
+  {
+    id: 'camarao-alho-oleo',
+    name: 'Camarão Alho e Óleo',
+    price: 64.90,
+    category: 'porcoes',
+    description: 'Camarão fresco no clássico alho e óleo',
+    featured: true,
+  },
+  {
+    id: 'trio-nordestino',
+    name: 'Trio Nordestino',
+    price: 55.90,
+    category: 'porcoes',
+    description: 'Seleção de três especialidades nordestinas',
+  },
+
+  // PRATOS PRINCIPAIS - INDIVIDUAL
+  {
+    id: 'strogonoff-frango-ind',
+    name: 'Strogonoff de Frango',
+    price: 23.90,
+    category: 'pratos-individuais',
+    description: 'Frango em molho cremoso com batata frita',
+  },
+  {
+    id: 'file-frango-grelhado',
+    name: 'Filé de Frango Grelhado',
+    price: 26.90,
+    category: 'pratos-individuais',
+    description: 'Frango grelhado suculento',
+  },
+  {
+    id: 'frango-milanesa',
+    name: 'Frango à Milanesa',
+    price: 27.90,
+    category: 'pratos-individuais',
+    description: 'Frango empanado crocante',
+  },
+  {
+    id: 'frango-creme-milho',
+    name: 'Frango com Creme de Milho',
+    price: 28.90,
+    category: 'pratos-individuais',
+    description: 'Frango macio em molho de creme de milho',
+  },
+  {
+    id: 'frango-parmegiana',
+    name: 'Frango à Parmegiana',
+    price: 33.90,
+    category: 'pratos-individuais',
+    description: 'Frango crocante com queijo derretido',
+  },
+  {
+    id: 'brasileirinho',
+    name: 'Brasileirinho',
+    price: 30.90,
+    category: 'pratos-individuais',
+    description: 'Prato tipicamente brasileiro',
+  },
+  {
+    id: 'strogonoff-alcatra',
+    name: 'Strogonoff de Alcatra',
+    price: 29.90,
+    category: 'pratos-individuais',
+    description: 'Alcatra em molho cremoso',
+  },
+  {
+    id: 'bife-cavalo',
+    name: 'Bife a Cavalo',
+    price: 31.90,
+    category: 'pratos-individuais',
+    description: 'Bife acompanhado de ovo e acompanhamentos',
+  },
+
+  // PRATOS PRINCIPAIS
+  {
+    id: 'alcatra-premium',
+    name: 'Alcatra Premium',
+    price: 34.90,
+    category: 'pratos-principais',
+    description: 'Alcatra de primeira qualidade',
+    featured: true,
+  },
+  {
+    id: 'alcatra-parmegiana',
+    name: 'Alcatra à Parmegiana',
+    price: 35.90,
+    category: 'pratos-principais',
+    description: 'Alcatra coberta com molho e queijo',
+  },
+  {
+    id: 'cuscuz-casa',
+    name: 'Cuscuz da Casa',
+    price: 25.90,
+    category: 'pratos-principais',
+    description: 'Cuscuz tradicional nordestino',
+  },
+  {
+    id: 'rubacao',
+    name: 'Rubacão',
+    price: 30.90,
+    category: 'pratos-principais',
+    description: 'Prato nordestino especial',
+  },
+  {
+    id: 'carne-sol-nata',
+    name: 'Carne de Sol na Nata',
+    price: 39.90,
+    category: 'pratos-principais',
+    description: 'Carne de sol macia em molho de nata',
+    featured: true,
+  },
+  {
+    id: 'carne-sol-queijo-coalho',
+    name: 'Carne de Sol com Queijo Coalho',
+    price: 40.90,
+    category: 'pratos-principais',
+    description: 'Carne de sol acompanhada com queijo coalho quente',
+  },
+  {
+    id: 'risoto-carne-sol',
+    name: 'Risoto de Carne de Sol',
+    price: 45.90,
+    category: 'pratos-principais',
+    description: 'Risoto cremoso com carne de sol desfiada',
+  },
+
+  // MASSAS
+  {
+    id: 'spaguetti-original',
+    name: 'Spaguetti Original',
+    price: 26.90,
+    category: 'massas',
+    description: 'Spaguetti com molho tradicional',
+  },
+  {
+    id: 'spaguetti-camarao-queijo',
+    name: 'Spaguetti ao Molho de Queijo com Camarão',
+    price: 45.90,
+    category: 'massas',
+    description: 'Spaguetti em molho cremoso de queijo com camarão',
+    featured: true,
+  },
+
+  // FRUTOS DO MAR
+  {
+    id: 'camarao-molho-queijo',
+    name: 'Camarão ao Molho de Queijo',
+    price: 45.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão em molho cremoso de queijo',
+  },
+  {
+    id: 'camarao-crocante',
+    name: 'Camarão Crocante',
+    price: 37.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão empanado e crocante',
+  },
+  {
+    id: 'chiclete-camarao',
+    name: 'Chiclete de Camarão',
+    price: 46.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão especialmente preparado',
+    featured: true,
+  },
+  {
+    id: 'strogonoff-camarao',
+    name: 'Strogonoff de Camarão',
+    price: 32.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão em molho cremoso',
+  },
+  {
+    id: 'camarao-creme-queijo',
+    name: 'Camarão ao Creme de Queijo',
+    price: 39.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão em molho cremoso de queijo',
+  },
+  {
+    id: 'camarao-parmegiana',
+    name: 'Camarão à Parmegiana',
+    price: 38.90,
+    category: 'frutos-do-mar',
+    description: 'Camarão coberto com queijo derretido',
+  },
+  {
+    id: 'tilapia-grelhada',
+    name: 'Tilápia Grelhada',
+    price: 35.90,
+    category: 'frutos-do-mar',
+    description: 'Tilápia fresca grelhada',
+    featured: true,
+  },
+  {
+    id: 'tilapia-crocante-panko',
+    name: 'Tilápia Crocante na Panko',
+    price: 38.90,
+    category: 'frutos-do-mar',
+    description: 'Tilápia empanada em panko crocante',
+  },
+  {
+    id: 'peixe-parmegiana',
+    name: 'Peixe à Parmegiana',
+    price: 40.90,
+    category: 'frutos-do-mar',
+    description: 'Peixe coberto com molho e queijo',
+  },
+
+  // SALADAS
+  {
+    id: 'salada-camarao',
+    name: 'Salada de Camarão',
+    price: 25.90,
+    category: 'saladas',
+    description: 'Salada fresca com camarão',
+  },
+  {
+    id: 'salada-alcatra',
+    name: 'Salada de Alcatra',
+    price: 21.00,
+    category: 'saladas',
+    description: 'Salada com alcatra grelhada',
+  },
+  {
+    id: 'salada-frango',
+    name: 'Salada de Frango',
+    price: 23.90,
+    category: 'saladas',
+    description: 'Salada com frango grelhado',
+  },
+];
+
+export const FEATURED_DISHES = MENU_DATA.filter((item) => item.featured);
+
+export const MENU_CATEGORIES = [
+  { id: 'porcoes', label: 'Porções', order: 1 },
+  { id: 'pratos-individuais', label: 'Pratos Principais - Individual', order: 2 },
+  { id: 'pratos-principais', label: 'Pratos Principais', order: 3 },
+  { id: 'massas', label: 'Massas', order: 4 },
+  { id: 'frutos-do-mar', label: 'Frutos do Mar', order: 5 },
+  { id: 'saladas', label: 'Saladas', order: 6 },
+] as const;
