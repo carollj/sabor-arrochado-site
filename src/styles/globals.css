@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  @apply scroll-smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-off-white text-dark font-sans;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display font-bold;
+}
+
+/* Animações de scroll */
+[data-animate] {
+  @apply opacity-0;
+}
+
+[data-animate].visible {
+  @apply animate-fade-in;
+}
+
+/* Focus visível */
+button:focus-visible,
+a:focus-visible {
+  @apply outline-2 outline-offset-2 outline-lime-brand;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    @apply !duration-0 !animation-none;
+  }
+}
+
+/* Hover states */
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-lime-brand text-dark font-display font-semibold rounded transition-all duration-300 hover:shadow-hover hover:-translate-y-1 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 bg-green-dark text-white font-display font-semibold rounded transition-all duration-300 hover:shadow-hover hover:-translate-y-1 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 border-2 border-white text-white font-display font-semibold rounded transition-all duration-300 hover:bg-white hover:text-dark cursor-pointer;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-hover hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-24 lg:py-32 px-4 md:px-6;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .text-label {
+    @apply text-xs md:text-sm font-display font-medium uppercase tracking-wider;
+  }
+}
